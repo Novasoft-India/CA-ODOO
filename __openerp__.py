@@ -3,29 +3,26 @@
     'name': "CA",
 
     'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
+        Module for Charted Accountants""",
 
     'description': """
-        Long description of module's purpose
+        For managing their day-to-day activities.
+        GitHub Repo : https://github.com/Novasoft-India/CA-ODOO.git
     """,
 
-    'author': "Your Company",
-    'website': "http://www.yourcompany.com",
+    'author': "Novasoft Consultancy Services Pvt. Ltd.",
+    'website': "http://www.novasoftindia.com",
 
-    # Categories can be used to filter modules in modules listing
-    # Check https://github.com/odoo/odoo/blob/master/openerp/addons/base/module/module_data.xml
-    # for the full list
     'category': 'Uncategorized',
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base'],
+    'depends': ['base','sale','project','account'],
 
     # always loaded
     'data': [
         # 'security/ir.model.access.csv',
-        'templates.xml',
+        'templates.xml','ca_view.xml'
     ],
     # only loaded in demonstration mode
     'demo': [
